@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
 
 <?import javafx.scene.control.Button?>
 <!--<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"-->
@@ -13,14 +14,30 @@
 
 <!--  <Label fx:id="welcomeText"/>-->
 <!--  <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
-<HBox alignment="center" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.insyspringjavafxlearning.HelloController"
-      style="-fx-border-color:green; -fx-border-width:4; -fx-border-style:dashed;"
-      spacing="10">
-  <padding>
-    <Insets left="10" right="10" top="10" bottom="10"/>
-  </padding>
-  <Button text="Help" prefWidth="90"/>
-  <Button text="Hello" prefWidth="90"/>
-  <Button text="Hi!" prefWidth="90"/>
-</HBox>
+<BorderPane fx:controller="com.example.insyspringjavafxlearning.HelloController"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <Label text="Our label is in the top position" alignment="center"
+               BorderPane.alignment="CENTER"
+               style="-fx-border-color:blue; -fx-border-width: 3; -fx-border-style: dashed;"/>
+    </top>
+    <center>
+        <Label text="Our long long long long long long long long label is in the center position"/>
+    </center>
+    <left>
+        <Label text="Our label is in the left position"/>
+    </left>
+    <right>
+        <Label text="Our label is in the right position"/>
+    </right>
+    <bottom>
+        <HBox spacing="10" alignment="bottom_right">
+            <padding>
+                <Insets bottom="10" right="10"/>
+            </padding>
+            <Button text="Okay" prefWidth="90"/>
+            <Button text="Cancel" prefWidth="90"/>
+            <Button text="Help" prefWidth="90"/>
+        </HBox>
+    </bottom>
+</BorderPane>
