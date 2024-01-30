@@ -4,40 +4,20 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
 
 <?import javafx.scene.control.Button?>
-<!--<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"-->
-<!--      fx:controller="com.example.insyspringjavafxlearning.HelloController">-->
-<!--  <padding>-->
-<!--    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>-->
-<!--  </padding>-->
 
-<!--  <Label fx:id="welcomeText"/>-->
-<!--  <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
-<BorderPane fx:controller="com.example.insyspringjavafxlearning.HelloController"
-            xmlns:fx="http://javafx.com/fxml">
-    <top>
-        <Label text="Our label is in the top position" alignment="center"
-               BorderPane.alignment="CENTER"
-               style="-fx-border-color:blue; -fx-border-width: 3; -fx-border-style: dashed;"/>
-    </top>
-    <center>
-        <Label text="Our long long long long long long long long label is in the center position"/>
-    </center>
-    <left>
-        <Label text="Our label is in the left position"/>
-    </left>
-    <right>
-        <Label text="Our label is in the right position"/>
-    </right>
-    <bottom>
-        <HBox spacing="10" alignment="bottom_right">
-            <padding>
-                <Insets bottom="10" right="10"/>
-            </padding>
-            <Button text="Okay" prefWidth="90"/>
-            <Button text="Cancel" prefWidth="90"/>
-            <Button text="Help" prefWidth="90"/>
-        </HBox>
-    </bottom>
-</BorderPane>
+<FlowPane fx:controller="com.example.insyspringjavafxlearning.HelloController"
+          xmlns:fx="http://javafx.com/fxml" orientation="VERTICAL">
+    <Button text="Button One"/>
+    <Button text="Button Two"/>
+    <Button text="Button Three"/>
+    <Button text="Button Four"/>
+    <Button text="Button Five"/>
+    <Button text="Button Six"/>
+    <Button text="Button Seven"/>
+    <Button text="Button Eight"/>
+    <Button text="Button Nine"/>
+    <Button text="Button Ten"/>
+</FlowPane>
