@@ -7,18 +7,22 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
 
-<TilePane fx:controller="com.example.insyspringjavafxlearning.HelloController"
-          xmlns:fx="http://javafx.com/fxml">
-    <Button text="Button One"/>
-    <Button text="Button Two"/>
-    <Button text="Button Three"/>
-    <Button text="Button Four"/>
-    <Button text="Button Five"/>
-    <Button text="Button Six"/>
-    <Button text="Button Seven"/>
-    <Button text="Button Eight"/>
-    <Button text="Button Nine"/>
-    <Button text="Button Ten"/>
-</TilePane>
+<?import javafx.scene.control.RadioButton?>
+<GridPane fx:controller="com.example.insyspringjavafxlearning.HelloController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="0" text="Click me!"/>
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="1" text="This is our Label!"
+        textFill="blue">
+        <font>
+            <Font name="Arial italic" size="12"/>
+        </font>
+    </Label>
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="2" text="Red"/>
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="3" text="Blue"/>
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="4" text="Purple"/>
+</GridPane>
